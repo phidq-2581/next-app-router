@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && yarn format",
+    "lint:fix": "eslint app --fix && npx eslint --fix --ignore-pattern .next/",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

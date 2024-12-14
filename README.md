@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Name
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Overview](#overview)
+- [Folder Structure](#folder-structure)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Testing](#testing)
+- [Localization](#localization)
+- [Scripts](#scripts)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Overview
+
+This is a modern web application built with **Next.js** and **TypeScript**. The project follows best practices for front-end development, including component-based architecture, Tailwind CSS for styling, and support for internationalization (i18n).
+
+---
+
+## Folder Structure
+
+```
+.
+├── README.md
+├── __tests__             # Test files
+│   ├── __snapshots__    # Snapshot tests
+│   ├── index.test.tsx   # Unit tests for index components
+│   └── snapshot.tsx     # Snapshot testing file
+├── app                   # Next.js app directory
+│   └── [locale]         # Dynamic locale-based routes
+│       ├── home         # Home page
+│       │   └── page.tsx # Home page component
+│       ├── layout.tsx   # Layout file
+│       └── page.tsx     # Default page component
+├── commitlint.config.js  # Commit linting configuration
+├── components            # Reusable UI components
+│   ├── atoms            # Small, single-purpose components
+│   ├── molecules        # Composed components
+│   └── organisms        # Complex components
+├── eslint.config.mjs     # ESLint configuration
+├── hooks                 # Custom React hooks
+├── i18n                  # Internationalization utilities
+│   ├── request.ts       # i18n request handling
+│   └── routing.ts       # i18n routing logic
+├── jest.config.js        # Jest configuration
+├── jest.setup.js         # Jest setup file
+├── messages              # Localization files
+│   ├── en.json          # English translations
+│   └── ja.json          # Japanese translations
+├── middleware.ts         # Middleware logic
+├── next-env.d.ts         # TypeScript environment types for Next.js
+├── next.config.mjs       # Next.js configuration
+├── package.json          # Project metadata and dependencies
+├── postcss.config.js     # PostCSS configuration
+├── public                # Static files
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── styles                # Global CSS
+│   └── main.css
+├── tailwind.config.js    # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+├── yarn-error.log        # Yarn error log
+└── yarn.lock             # Dependency lockfile
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js App Router** with dynamic locale-based routing.
+- **Component-based Architecture** using Atomic Design principles.
+- **Internationalization (i18n)** with JSON files for translations.
+- **Styling** using Tailwind CSS.
+- **Testing** with Jest for unit and snapshot tests.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**
+- **TypeScript**
+- **Jest**
+- **Tailwind CSS**
+- **i18n**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
+   ```
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Running the Project
+
+To start the development server:
+
+```bash
+yarn dev
+```
+
+To build the project for production:
+
+```bash
+yarn build
+```
+
+To serve the production build:
+
+```bash
+yarn start
+```
+
+---
+
+## Testing
+
+To run tests:
+
+```bash
+yarn test
+```
+
+---
+
+## Localization
+
+Localization files are located in the `messages` folder. Add translations to `en.json` and `ja.json` (or other language files) as needed. The application dynamically serves translations based on the locale route.
+
+---
+
+## Scripts
+
+Key scripts available in `package.json`:
+
+- `yarn dev`: Start the development server
+- `yarn build`: Build the project for production
+- `yarn start`: Serve the production build
+- `yarn test`: Run unit and snapshot tests
+- `yarn lint`: Run linting checks
