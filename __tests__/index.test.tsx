@@ -3,7 +3,7 @@
  */
 import { render, screen } from '@testing-library/react';
 
-import HomePage from '@/app/[locale]/home/page';
+import HomePage from '@/app/home/page';
 const { expect, describe, it } = require('@jest/globals');
 
 describe('Home', () => {

@@ -13,7 +13,19 @@ module.exports = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      colors: {},
+      colors: {
+        primary: {
+          DEFAULT: '#0075C2',
+        },
+        danger: {
+          DEFAULT: '#DD3C57',
+        },
+        success: {
+          DEFAULT: '#00B22D',
+        },
+        defaultText: '#001F33',
+        defaultBackground: '#F2F8FC',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

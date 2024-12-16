@@ -6,11 +6,9 @@ This project is a modern web application structured using React and Next.js. It 
 
 - [Project Overview](#project-overview)
 - [Features](#features)
-- [Directory Structure](#directory-structure)
 - [Setup Instructions](#setup-instructions)
 - [Scripts](#scripts)
 - [Testing](#testing)
-- [Localization](#localization)
 - [Tech Stack](#tech-stack)
 
 ## Features
@@ -59,10 +57,6 @@ The project uses Jest for unit and snapshot testing. Test files are located in t
 ```bash
 yarn test
 ```
-
-## Localization
-
-Localization is managed under the `i18n` and `messages` directories. Use JSON files to add or update translations.
 
 ## Tech Stack
 

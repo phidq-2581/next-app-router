@@ -6,4 +6,7 @@
   :root {
     --radius: 0.5rem;
   }
+  html {
+    @apply bg-defaultBackground text-defaultText;
+  }
 }
